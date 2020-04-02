@@ -1,3 +1,48 @@
 =======
 Sphinx
 =======
+
+介绍
+----
+
+Sphinx 是一个强大的文档生成器，具有许多用于编写技术文档的强大功能，包括：
+
+- 维护一份源文档，生成网页，可打印的PDF，用于电子阅读器（ePub）的文档等
+
+- 支持 reStructuredText 或 Markdown 编写文档
+
+- 被广泛使用的代码文档系统
+
+- 代码示例语法高亮
+
+- 活跃的官方和第三方扩展生态
+
+安装教程
+--------
+
+这里简单演示window下的sphinx文档创建过程
+
+安装Sphinx
+**********
+
+    .. code-block:: python
+        :linenos:
+
+        pip install sphinx
+
+
+安装Read the Docs主题
+**********************
+
+    .. code-block:: python
+        :linenos:
+
+        pip install sphinx_rtd_theme
+
+
+
+快速开始
+*********
+
+    ..image:: /picture/sphinx_start.PNG
+
