@@ -3,7 +3,7 @@ Sphinx
 =======
 
 介绍
-----
+-----
 
 Sphinx 是一个强大的文档生成器，具有许多用于编写技术文档的强大功能，包括：
 
@@ -17,7 +17,7 @@ Sphinx 是一个强大的文档生成器，具有许多用于编写技术文档�
 
 - 活跃的官方和第三方扩展生态
 
-这里举几个用到sphnix的开源文档链接:
+这里举几个用到sphinx的开源文档链接:
 
 1. `Cozmo SDK <http://cozmosdk.anki.com/docs/index.html>`_
 2. `python 版本介绍 <https://docs.python.org/3/>`_
@@ -80,6 +80,13 @@ Sphinx 是一个强大的文档生成器，具有许多用于编写技术文档�
 
     一般只要设置 **项目名称** **作者** 即可，其他默认回车 
 
+生成的文档有三个最重要的目录：
+
+``/Makefile`` :编译文档，检测拼写和语法
+
+``/source/conf.py`` :包含所有配置和设置信息
+
+``/source/index.rst`` :文档索引的目录
 
 编译
 ****
@@ -102,6 +109,13 @@ Sphinx 是一个强大的文档生成器，具有许多用于编写技术文档�
 文档编辑
 ----------
 
+reStructuredText，Markdown，Notebook有多种多样的标记语言来书写文档，这边介绍reStructuredText
+
+.. tip:: 
+
+    .. image:: /picture/table.PNG
+        :scale: 30%
+
 reStructuredText介绍
 *********************
 
@@ -109,14 +123,19 @@ reStructuredText（RST、ReST或reST）是一种用于文本数据的文件格�
 
 它是Python Doc-SIG（Documentation Special Interest Group）的 Docutils 项目的一部分，旨在为 Python 创建一组类似于 Java 的 Javadoc 或 Perl 的 Plain Old Documentation（pod）的工具。Docutils 可以从 Python 程序中提取注释和信息，并将它们格式化为各种形式的程序文档
 
-.. tip::
+reStructuredText是一个轻量级的标记语言，它的语法十分简单，学习成本低，它利用简介的语法代替排版，像常见的word会有大量的排版和字体设置，reStructuredText能让我们更专心的来书写内容。
+
+.. tip:: 使用markdown修改目录下的 ``/source/conf.py`` 文件
+
+    .. image:: /picture/markdown.PNG
+        :scale: 30%
 
     这里列一个教程 `reStructuredText入门教程 <http://www.bary.com/doc/a/228277572381775842/>`_ ，就不具体展开
 
-sphitnx文档编辑器
-*****************
+reStructuredText文档编辑器
+**************************
 
-这里介绍vscode来编辑sphinx文档
+这里介绍vscode来编辑文档
 
 安装 sphinx
 ...............
@@ -155,3 +174,39 @@ vscode进行编辑
 打开之前生成好的文件目录，点开预览窗口，即可边编辑文档边看效果
 
 .. image:: /picture/preview.PNG
+
+
+这里大概给讲几个语法：
+***********************
+
+**（1）标题：**
+
+可以使用任意符号 # * - = 等等都可以，标题关系至上而下为一级二级三级，相同符号为同一级
+
+**（2）列表：** 
+有符号列表
+
+**1. 列表1**
+
+**2. 列表2**
+
+无符号列表
+
+**- 列表1**
+
+**- 列表2**
+
+（3）超链接 
+
+**`链接名称 <https://链接地址/>`_**
+
+（4）图片
+
+**.. image:: /picture/rst.PNG**
+    **align: center**
+    **:scale: 30%**
+
+（5）代码引用
+
+.. code-block:: python
+        :linenos:
