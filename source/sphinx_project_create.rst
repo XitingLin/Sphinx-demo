@@ -17,7 +17,11 @@ Sphinx 是一个强大的文档生成器，具有许多用于编写技术文档�
 
 - 活跃的官方和第三方扩展生态
 
-更详细了解和使用sphinx内容可以参考：`sphinx教程 <https://www.sphinx.org.cn/index.html>`_
+这里举几个用到sphnix的开源文档链接:
+
+1. `Cozmo SDK <http://cozmosdk.anki.com/docs/index.html>`_
+2. `python 版本介绍 <https://docs.python.org/3/>`_
+3. `RoboMaster EP <https://robomaster-dev.rtfd.io/>`_
 
 安装教程
 --------
@@ -71,6 +75,7 @@ Sphinx 是一个强大的文档生成器，具有许多用于编写技术文档�
     10. 启用autodoc|doctest|intersphinx|todo|coverage|pngmath|ifconfig|viewcode：n
     11. 生成Makefile (Create Makefile)：y
     12. 生成windows用命令行(Create Windows command file):y
+
     一般只要设置 **项目名称** **作者** 即可，其他默认回车 
 
 
@@ -89,6 +94,8 @@ Sphinx 是一个强大的文档生成器，具有许多用于编写技术文档�
 .. image:: /picture/html.PNG
 
 这就是生成的文档内容。
+
+.. tip:: 更详细了解和使用sphinx，可以参考：`sphinx教程 <https://www.sphinx.org.cn/index.html>`_
 
 文档编辑
 ----------
@@ -131,14 +138,14 @@ sphitnx文档编辑器
 1.插件reStructuredText
 
 .. image:: /picture/rst.PNG
-    :scale: 50%
+    :scale: 30%
 
 2.插件Table Formatter
 
 由于reStructuredText做表格特别麻烦，这个插件可以帮助你做表格，只需要把关键的标记写对，其余的都会自动补全而且效果十分美观。
 
 .. image:: /picture/table.PNG
-    :scale: 50%
+    :scale: 30%
 
 vscode进行编辑
 ..............
