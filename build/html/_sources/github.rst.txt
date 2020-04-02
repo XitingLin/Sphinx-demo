@@ -1,3 +1,65 @@
 ======
 github
 ======
+
+把本地文档上传至 **github** 网站
+
+创建仓库
+--------
+
+.. image:: /picture/github.PNG
+
+
+把本地文件上传至远程仓库python
+----------------------------------
+
+Git初始化
+*********
+
+.. code-block:: python
+        :linenos:
+
+        git init
+
+当前目录执行git初始化，在当前目录中添加一个.git文件夹来存储一些git数据
+
+添加所有文件到暂存区
+***********************
+.. code-block:: python
+        :linenos: 
+      
+        git add *
+
+将暂存区内容提交到本地仓库
+****************************
+.. code-block:: python
+        :linenos: 
+
+        git commit -m "项目本地仓库上传"
+
+连接远程仓库(SSH和HTTPS方式都行)
+*********************************
+.. code-block:: python
+        :linenos: 
+
+        git remote add origin git@github.com:rangdandanfei/git-use-demo.git
+
+拉取(pull)远程仓库master分支代码，与本地进行合并，再将本地仓库master分支代码push到远程
+**************************************************************************************
+.. code-block:: python
+        :linenos: 
+
+        git pull --rebase origin master
+
+提交到远程仓库
+*******************
+.. code-block:: python
+        :linenos: 
+
+        git push -u origin master
+
+
+- git push 将当前分支推送至远程同名分支
+- git push origin [branch-name] 推送本地某分支至远程某分支
+- git push -u origin [branch-name] 推送本地某分支至远程某分支，并跟踪
+

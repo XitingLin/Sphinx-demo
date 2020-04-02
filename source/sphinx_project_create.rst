@@ -37,22 +37,24 @@ Sphinx 是一个强大的文档生成器，具有许多用于编写技术文档�
         pip install sphinx
 
 
-安装Read the Docs主题
+安装sphinx主题
 **********************
+
+`sphinx主题 <https://sphinx-themes.org/>`_ 有多种多样，可以根据自己的喜好去修改主题
+
+.. image:: /picture/theme.PNG
+
+这里安装的主题是sphinx_rtd_theme
 
     .. code-block:: python
         :linenos:
 
         pip install sphinx_rtd_theme
 
+修改主题，要修改对应的配置文件，配置文件在 ``/source/conf.py``
 
+.. image:: /picture/html_theme.PNG
 
-安装sphinx_start
-******************
-    .. code-block:: python
-        :linenos:
-
-        pip install sphinx-quickstart
 
 
 文档的创建

@@ -10,13 +10,13 @@ github
 .. image:: /picture/github.PNG
 
 
-把本地文件上传至远程仓库
--------------------------
+把本地文件上传至远程仓库python
+----------------------------------
 
 Git初始化
 *********
 
-.. code-block:: cmd
+.. code-block:: python
         :linenos:
 
         git init
